@@ -1,0 +1,632 @@
+@media (max-width:480px) {
+    html {
+        overflow-x: hidden;
+    }
+    .menu__box {
+        display: none;
+    }
+    .container {
+        height: 70vh;
+        width: 100vw;
+        position: relative;
+        overflow: hidden;
+    }
+    .hero {
+        height: 70vh;
+        width: 100vw;
+        background: url('images/bg.jpg');
+        background-size: 400%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .initial {
+        font-size: 10rem;
+        color: #f1ee6a;
+        font-family: 'Qahiri', sans-serif;
+    }
+    .f-initial {
+        position: absolute;
+        top: -3%;
+        left: 6%;
+        z-index: 99;
+    }
+    .s-initial {
+        position: absolute;
+        top: -3%;
+        left: 14.5%;
+        z-index: 99;
+    }
+    .menu {
+        display: none;
+    }
+    .mobile-menu__logo-initial {
+        font-size: 10rem;
+        font-family: 'Qahiri', sans-serif;
+        color: #585858;
+        transition: all ease-in-out 0.4s;
+        position: absolute;
+        top: -3%;
+        right: 6%;
+        z-index: 99;
+    }
+    .mobile-menu__box {
+        height: 70vh;
+        width: 100vw;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0%;
+        right: -100%;
+        transition: all ease-in-out 0.4s;
+        z-index: 98;
+    }
+    .mobile-menu__box ul {
+        height: 200px;
+        width: 200px;
+    }
+    .mobile-menu__box ul li {
+        text-align: center;
+    }
+    .mobile-menu__box ul li a {
+        font-size: 3rem;
+        font-weight: 800;
+        color: #f1ee6a;
+    }
+    .main-text {
+        font-size: 3rem;
+        font-weight: 800;
+        letter-spacing: 3px;
+        text-align: center;
+        width: 200px;
+        color: #f1ee6a;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 0.35px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .main-para {
+        font-size: 1rem;
+        width: 100px;
+        text-align: center;
+        color: #f1ee6a;
+        position: absolute;
+        top: 65%;
+        left: 38%;
+    }
+
+    /* ############## Expertise Section Styling ############ */
+    .expertise {
+        height: 80vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .expertise .skill {
+        height: 50%;
+        width: 100%;
+        background-color: rgb(32, 32, 32);
+    }
+    .expertise .web-dev {
+        padding: 4rem 4rem 2rem 4rem;
+    } 
+    .expertise .graphic-design {
+        padding: 2rem 4rem 4rem 4rem;
+    } 
+    .expertise .skill .skill__inner {
+        height: 100%;
+        width: 100%;
+        background-color: rgb(51, 51, 51);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        position: relative;
+    }
+    .expertise .skill .skill__inner .heading {
+        display: none;
+    }
+    .expertise .skill .skill__inner .mobile-heading {
+        font-size: 1rem;
+        font-weight: 800;
+        letter-spacing: 2px;
+        position: absolute;
+        bottom: 0%;
+        height: 100%;
+        width: 100%;
+        background-color: #f1ee6a;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 99;
+        transition: all ease-in-out 0.5s;
+    }
+    .languages {
+        height: 70%;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        top: 42%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .languages .lang {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .languages .lang h1 {
+        color: goldenrod;
+        font-size: 1rem;
+    }
+    .languages .lang .progress-bar {
+        width: 150px;
+        height: 20px;
+        background-color: black;
+        position: relative;
+    }
+    .languages .lang .progress-bar .progress {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        background-color: goldenrod;
+        height: 100%;
+        width: 0%;
+    }
+    .web-prog1 {
+        width: 0%;
+        transition: all ease-in-out 1s;
+        animation: none;
+    }
+    .web-prog2 {
+        width: 0%;
+        transition: all ease-in-out 1s;
+        animation: none;
+    }
+    .web-prog3 {
+        width: 0%;
+        transition: all ease-in-out 1s;
+        animation: none;
+    }
+    .web-prog4 {
+        width: 0%;
+        transition: all ease-in-out 1s;
+        animation: none;
+    }
+    
+    @keyframes fillOne {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 90%;
+        }
+    }
+    @keyframes fillTwo {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 70%;
+        }
+    }
+    @keyframes fillThree {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 50%;
+        }
+    }
+    @keyframes fillFour {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 40%;
+        }
+    }
+    
+    .graphic-prog1 {
+        width: 0%;
+        transition: all ease-in-out 1s;
+        animation: none;
+    }
+    .graphic-prog2 {
+        width: 0%;
+        transition: all ease-in-out 1s;
+        animation: none;
+    }
+    .graphic-prog3 {
+        width: 0%;
+        transition: all ease-in-out 1s;
+        animation: none;
+    }
+    .graphic-prog4 {
+        width: 0%;
+        transition: all ease-in-out 1s;
+        animation: none;
+    }
+
+    @keyframes fillFive {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 60%;
+        }
+    }
+    @keyframes fillSix {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 80%;
+        }
+    }
+    @keyframes fillSeven {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 90%;
+        }
+    }
+    @keyframes fillEight {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 50%;
+        }
+    }
+
+    /* ################ Timeline Section Styling #################*/
+    .timelineSection {
+        height: 140vh;
+        width: 100vh;
+        background-color: rgb(32, 32, 32);
+    }
+    .inner-timelineSec {
+        height: 140vh;
+        width: 100vw;
+        position: relative;
+    }
+    .timelineHeading {
+        font-size: 1rem;
+        color: #f1ee6a;
+        background-color: #000000;
+        margin: 1.5rem 0 0 0;
+        padding: 2rem;
+        width: 200px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 1%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .timeline {
+        height: 900px;
+        width: 15px;
+        background-color: #f1ee6a;
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        transform: translate(-50%,-50%);
+        transition: ease-in-out 0.4s;
+    }
+    .inner-timeline {
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+    .point {
+        height: 20px;
+        width: 10px;
+        background-color: black;
+        transition: ease-in-out 0.4s;
+    }
+    .point1,
+    .point2,
+    .point3,
+    .point4,
+    .point5,
+    .point6,
+    .point7,
+    .point8 {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .point1 {
+        top: 2%;
+    }
+    .point2 {
+        top: 13%;
+    }
+    .point3 {
+        top: 25%;
+    }
+    .point4 {
+        top: 32%;
+    }
+    .point5 {
+        top: 42.5%;
+    }
+    .point6 {
+        top: 55.5%;
+    }
+    .point7 {
+        top: 72%;
+    }
+    .point8 {
+        top: 82.5%;
+    }
+
+
+
+
+    .year h1 {
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+    .year1,
+    .year3,
+    .year5,
+    .year7,
+    .year2,
+    .year4,
+    .year6,
+    .year8 {
+        position: absolute;
+        left: 13%;
+        transform: translate(-50%,-50%);
+    }
+    
+    .year1 {
+        top: 12%;
+        transition: all ease-in-out 0.4s;
+        color: white;
+    }
+    .year2 {
+        top: 20.5%;
+        transition: all ease-in-out 0.4s;
+        color: white;
+    }
+    .year3 {
+        top: 30%;
+        transition: all ease-in-out 0.4s;
+        color: white;
+    }
+    .year4 {
+        top: 35.6%;
+        transition: all ease-in-out 0.4s;
+        color: white;
+    }
+    .year5 {
+        top: 44%;
+        transition: all ease-in-out 0.4s;
+        color: white;
+    }
+    .year6 {
+        top: 54.3%;
+        transition: all ease-in-out 0.4s;
+        color: white;
+    }
+    .year7 {
+        top: 67.3%;
+        transition: all ease-in-out 0.4s;
+        color: white;
+    }
+    .year8 {
+        top: 75.7%;
+        transition: all ease-in-out 0.4s;
+        color: white;
+    }
+
+
+
+    .line {
+        height: 3px;
+        width: 280px;
+        border-top: 3px dashed #f1ee6a;
+    }
+    .line1,
+    .line3,
+    .line5,
+    .line7, 
+    .line2,
+    .line4,
+    .line6,
+    .line8 {
+        position: absolute;
+        left: 57%;
+        transform: translate(-50%,-50%);
+    }
+    .line1 {
+        top: 12%;
+    }
+    .line2 {
+        top: 20.5%;
+    }
+    .line3 {
+        top: 30%;
+    }
+    .line4 {
+        top: 35.6%;
+    }
+    .line5 {
+        top: 44%;
+    }
+    .line6 {
+        top: 54.3%;
+    }
+    .line7 {
+        top: 67.3%;
+    }
+    .line8 {
+        top: 75.7%;
+    }
+
+
+
+
+    
+    .des {
+        width: 280px;
+        cursor: default;
+        color: white;
+    }
+    .des p {
+        font-size: 1rem;
+    }
+    .des1,
+    .des3, 
+    .des5,
+    .des7, 
+    .des2,
+    .des4,
+    .des6,
+    .des8 {
+        width: 280px;
+        position: absolute;
+        left: 20%;
+        text-align: left;
+        transition: all ease-in-out 0.4s;
+    }
+    .des1 {
+        top: 12.6%;
+    }
+    .des2 {
+        top: 21%;
+    }
+    .des3 {
+        top: 30.6%;
+    }
+    .des4 {
+        top: 36.2%;
+    }
+    .des5 {
+        top: 44.6%;
+    }
+    .des6 {
+        top: 55%;
+    }
+    .des7 {
+        top: 68%;
+    }
+    .des8 {
+        top: 76.7%;
+    }
+
+
+    /* ################## Works Section Styling ################# */
+
+    .worksSection {
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(32, 32, 32);
+        position: relative;
+    }
+    .works {
+        height: 100vh;
+        width: 100vw;
+    }
+    .worksHeading {
+        font-size: 1rem;
+        color: #f1ee6a;
+        background-color: #000000;
+        margin: 1.5rem 0 0 0;
+        padding: 2rem;
+        width: 200px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 1%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .harmony {
+        height: 812px;
+        width: 375px;
+        transform: scale(0.7);
+        position: absolute;
+        top: 1%;
+        left: 0%;
+    }
+    .siteBtn {
+        display: none;
+    }
+    .harmonyBtn {
+        display: block;
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 99;
+    }
+    .ubisoft, 
+    .bmw,
+    .nike {
+        display: none;
+    }
+
+    /* ##################### Footer Styling ##################### */
+    footer {
+        height: 20vh;
+        width: 100vw;
+        background-color: #f1ee6a;
+        position: relative;
+    }
+
+    .footer-logo {
+        width: 60px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .footer-logo span {
+        font-size: 10rem;
+        color: black;
+        font-family: 'Qahiri', sans-serif;
+    }
+
+    .footerText {
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%,-50%);
+        font-size: 1rem;
+        font-weight: 900;
+        color: black;
+        text-align: center;
+    }
+
+    .goodbye {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 1rem;
+        font-weight: 600;
+        color: black;
+        text-align: center;
+    }
+
+
+}
