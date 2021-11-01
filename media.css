@@ -558,6 +558,7 @@
     .site-allign {
         height: 813px;
         width: 100vw;
+        border: none;
         display: flex;
         justify-content: center;
         align-items: center;
